@@ -6,7 +6,7 @@ def camera_info_to_txt(cam):
     height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
     width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
 
-    with open('camera_outputs.txt', 'w') as f:
+    with open('solutions/camera_outputs.txt', 'w') as f:
         f.write("Fps: {}, Height: {}, Width: {}".format(fps, height, width))
 
 
